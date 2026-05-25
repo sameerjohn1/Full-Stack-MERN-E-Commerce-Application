@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import { AuthProvider } from "./context/AuthContext";
 import { CartProvider } from "./context/CartContext";
 import { WishlistProvider } from "./context/WishlistContext";
+import { ThemeProvider } from "./context/ThemeContext";
 import {
   ProtectedRoute,
   AdminRoute,
@@ -202,10 +203,12 @@ export default function App() {
   );
 
   return (
-    <AuthProvider>
-      <CartProvider>
-        <WishlistProvider>{content}</WishlistProvider>
-      </CartProvider>
-    </AuthProvider>
+    <ThemeProvider>
+      <AuthProvider>
+        <CartProvider>
+          <WishlistProvider>{content}</WishlistProvider>
+        </CartProvider>
+      </AuthProvider>
+    </ThemeProvider>
   );
 }

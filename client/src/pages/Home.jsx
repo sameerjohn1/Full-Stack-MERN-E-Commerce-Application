@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-indigo-800 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           {Array.from({ length: 20 }, (_, i) => (
             <motion.div
@@ -165,7 +165,7 @@ export default function Home() {
         </ErrorBoundary>
       </section>
 
-      <section className="bg-gradient-to-r from-primary-600 to-indigo-600 py-20">
+      <section className="bg-gradient-to-r from-primary-600 to-primary-800 py-20">
         <div className="max-w-4xl mx-auto px-4 text-center text-white">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
